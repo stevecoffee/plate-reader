@@ -1,0 +1,23 @@
+Processing Stages
+- Take raw image and find plates
+- Identify plate type
+- Extract license number from plate
+- Extract other relevant data from plate?
+
+Output
+- list of plates
+  - for each plate
+    - plate image geometry (four points on original should be enough to describe required iamge transformation) 
+    - transformed plate image
+    - confidence that this is actually a plate?
+    - plate type
+      - Issuer (State, Govt, etc.)
+      - Subtype
+    - plate ID
+    - other plate-specific extracted data, if any
+
+Dev Tasks
+- get exemplars of state license plates
+- test images
+- research public image processing techniques for each step
+- choose dev environment and language
